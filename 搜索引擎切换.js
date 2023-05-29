@@ -17,15 +17,20 @@ let SiteConfig = {//网站规则配置
         name: "百度",
         searchUrl: "https://www.baidu.com/s?wd="
     },
-    cnbing: {  // pythonthree
+    cnbing: {  // bing中国
         webUrlReg: /https*:\/\/cn\.bing\.com\/search\?q=([^\s&]+)/,
         name: "cnbing",
         searchUrl: "https://cn.bing.com/search?q="
     },
-    google: {  // pythonthree
-        webUrlReg: /https*:\/\/www\.google\.com\/search\?q=([^\s&]+)/,
-        name: "google",
-        searchUrl: "https://www.google.com/search?q="
+    google: {  // 日本谷歌，日本谷歌相对快些
+        webUrlReg: /https*:\/\/www\.google\..{3,5}?\/search\?q=([^\s&]+)/,
+        name: "日本google",
+        searchUrl: "https://www.google.co.jp/search?q="
+    },
+    duckduckgo: {  // duckduckgo
+        webUrlReg: /https*:\/\/html\.duckduckgo\.com\/html\/\?q=([^\s&]+)/,
+        name: "duckduckgo",
+        searchUrl: "https://html.duckduckgo.com/html/?q="
     }
 }
 
